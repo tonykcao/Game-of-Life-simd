@@ -79,24 +79,6 @@ NOTE:
             + challenge_2000.txt 0 ->  3.34   secs
             + challenge_4000.txt 0 -> 13.42   secs
 
-
-
-echo "----------";time ./fastsimd challenge_500.txt 0
-echo "----------";time ./fastsimd challenge_1000.txt 0
-echo "----------";time ./fastsimd challenge_2000.txt 0
-echo "----------";time ./fastsimd challenge_4000.txt 0
-echo "----------";time ./fastsimd challenge_8000.txt 0
-echo "----------";time ./fastsimd challenge_16000.txt 0
-echo "----------";time ./fastsimd challenge_32000.txt 0
-
-time ./thread2 challenge_1000.txt 0; echo "----------"
-time ./thread2 challenge_2000.txt 0; echo "----------"
-time ./thread2 challenge_4000.txt 0; echo "----------"
-time ./thread2 challenge_8000.txt 0; echo "----------"
-time ./thread2 challenge_16000.txt 0; echo "----------"
-time ./thread2 challenge_25600.txt 0; echo "----------"
-
-
 Thoughts: 
     NOT APPLIED:
     0. SHORT CIRCUIT
