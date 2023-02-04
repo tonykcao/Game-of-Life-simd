@@ -6,7 +6,7 @@ Inspired by a speed challege posted for a Game of Life lab from Data Struct & Al
 This implementation applies threading, AVX2 SIMD instructions, and bit masks to achieve 85 to 100 times faster performance than initial implementation.
 
 For progress notes, please take a look at ChallengeNotes.adoc.
-Times provided there were tested on a Linux system with Intel Xeon E5-1650 (6 cores, 12 threads)
+Times provided there were tested on a Linux system with Intel Xeon E5-1650 (6 cores, 12 threads).
 
 Code rewritten from
 https://github.swarthmore.edu/CS31-F22/Lab6-kcao1-wrisse1 (coursework private repo)
