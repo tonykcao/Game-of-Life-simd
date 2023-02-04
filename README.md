@@ -26,7 +26,7 @@ To run provided challenge files:
 ./barrsimd ./challenges/challenge_500.txt 0 12
 # runs challenge_500.txt with no ASCII animation and 12 threads.
 ```
-To create a new challenge file, provide a text file with game board height, width, turn count, no. of live cells at start, and coordinates of each cells.
+To create a new challenge file, provide a text file with game board height, width, turn count, no. of live cells at start, and coordinates of each cell.
 
 ## Contact
 Feel free to open an issue or reach out to kcao1@swarthmore.edu for any questions!
