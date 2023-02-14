@@ -3,7 +3,7 @@
 Inspired by a speed challege posted for a Game of Life lab from Data Structures & Algorithms course at Swarthmore College.
 
 ### Notes
-This implementation applies threading, AVX2 SIMD instructions, and bit masks to achieve 85 to 100 times faster performance than initial implementation.
+This implementation applies threading, AVX2 SIMD instructions, and bit masks to achieve 100 to 120 times faster performance than initial implementation, depending on world size.
 
 For progress notes, please take a look at ChallengeNotes.adoc.
 Times provided there were tested on a Linux system with Intel Xeon E5-1650 (6 cores, 12 threads).
