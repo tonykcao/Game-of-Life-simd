@@ -2,14 +2,16 @@ Challenge notes:
 
 BEFORE:
     base code from lab, -o3 flag
-        6.6s for 1k x 1k
-        27.1s for 2k x 2k
+    
+    6.6s for 1k x 1k
+    
+    27.1s for 2k x 2k
 
 NOTE:
 
     (5 threads)
-    OPTIMIZATION 5: 2x - 30~40% faster than OPT 4/4.5, ~40-45x faster than benchmark on 4k
-        estimate to be about 50x faster than benchmark at 16k x 16k
+    OPTIMIZATION 5: 2x - 30~40% faster than OPT 4/4.5, estimate ~90-100x faster than original on 4k
+        estimate to be about 100-120x faster than original at 16k x 16k
         > IMPLEMENTED SIMD INSTRUCTIONS (AVX2+SSE)
         > single thread impl achieved massive 3x speed up, could match threaded
             impls at small boards, doesnt scale as well with massive boards
@@ -23,12 +25,11 @@ NOTE:
             + challenge_32000.txt 0 -> 74.390   secs    |  55.495   secs    |  53.121   secs
 
     (5 threads)
-    OPTIMIZATION 4/4.5: 15%-2x faster than OPT 3, ~23.5x faster than benchmark on 4k
-        estimate to be about 30x faster than benchmark at 16k x 16k
+    OPTIMIZATION 4/4.5: 15%-2x faster than OPT 3, estimate ~45-50x faster than original on 4k
         > IMPLEMENTED THREADING (sample time taken at 5 threads)
             + IMPLEMENTED BARRIER FOR THREADS
-                - 5-10% faster than OPT 4, ~23-25x faster than benchmark on 4k
-                    estimate to be about 35x faster than benchmark at 16k x 16k
+                - 5-10% faster than OPT 4, ~50x faster than original on 4k
+                    estimate to be about 70x faster than original at 16k x 16k
         > significantly faster compared to OPT 3 on 16k, minor on small boards
         > results sample:               create/join     |     barrier
             + challenge_1000.txt 0  ->  0.244   secs    |   0.164   secs
@@ -39,7 +40,7 @@ NOTE:
             + challenge_25600.txt 0 -> 55.445   secs    |  50.940   secs
 
     name: faster.c
-    OPTIMIZATION 3: 15%-25% faster than OPT 2, ~17.5x faster than benchmark on 4k
+    OPTIMIZATION 3: 15%-25% faster than OPT 2, ~35x faster than original on 4k
         > changed cellOn and cellOff to take raw index of cell instead of coords
         > theory: we only need cell coords if it needs modifying, this can be
             calculated in cellOn/cellOff
@@ -52,7 +53,7 @@ NOTE:
             + challenge_8000.txt 0  ->  8.427   secs
             + challenge_16000.txt 0 -> 45.926   secs
 
-    OPTIMIZATION 2: ~4x faster than OPT 1, 14x faster than benchmark on 4k
+    OPTIMIZATION 2: ~4x faster than OPT 1, ~16x faster than original on 4k
         > changed makefile to -O1 flag, runs about 15% faster than -O3
         > removed getIndex function dependency
             - this was a simple math ops that was called massive amounts
@@ -65,7 +66,7 @@ NOTE:
             + challenge_8000.txt 0  -> 13.651   secs
             + challenge_16000.txt 0 -> 55.174   secs
 
-    OPTIMIZATION 1: 8x faster than base code, 4x faster than benchmark
+    OPTIMIZATION 1: 8x faster than base code
         > Bit operations + store neighbor count in every cell
             -added typedef cellType to quickly change type stored
                 + char performed quite a bit better than int
