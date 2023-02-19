@@ -1,6 +1,6 @@
 # GOL
 
-Inspired by a speed challege posted for a Game of Life lab from Data Structures & Algorithms course at Swarthmore College.
+Inspired by a speed challege posted for a Game of Life lab from Intro to Computer Systems course at Swarthmore College.
 
 ### Notes
 This implementation applies threading, AVX2 SIMD instructions, and bit masks to achieve 100 to 120 times faster performance than initial implementation, depending on world size.
