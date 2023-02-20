@@ -8,12 +8,12 @@ BEFORE:
     27.1s for 2k x 2k
 
 NOTE:
+
     (5 threads)
     OPTIMIZATION 5: 2x - 30~40% faster than OPT 4/4.5, estimate ~90-100x faster than original on 4k
         estimate to be about 100-120x faster than original at 16k x 16k
         > IMPLEMENTED SIMD INSTRUCTIONS (AVX2+SSE)
-        > single thread impl achieved massive 3x speed up, could match threaded
-            impls at small boards, doesnt scale as well with massive boards
+        > single thread impl achieved massive 3x speed up, could match threaded impls at small boards, doesnt scale as well with massive boards
         > SAMPLE RUN AT 12 THREADS: 46.832s for challenge_32000.txt with barrier
         > results sample:               single thread   |     create/join   |     barrier
             + challenge_1000.txt 0  ->  0.108   secs    |   0.135   secs    |   0.096   secs
