@@ -1,7 +1,7 @@
 C = gcc
 C++ = g++
 # CFLAGS = -g -Wall -Wvla -Werror -Wno-error=unused-variable
-FASTCFLAGS = -O3 -Wno-unused-result # system("clear") triggers this
+FASTCFLAGS = -O1 -Wno-unused-result # system("clear") triggers this
 # FASTCFLAGS = -g -Wall -Wvla -Werror -Wno-error=unused-variable
 
 SIMDFLAGS = -mavx -mavx2 -msse4.1 -msse2
