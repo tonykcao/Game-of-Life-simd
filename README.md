@@ -27,7 +27,7 @@ To run provided challenge files:
 To create a new challenge file, provide a text file with game board height, width, turn count, no. of live cells at start, and coordinates of each cell.
 
 ## Contact
-Feel free to open an issue or reach out to kcao1@swarthmore.edu for any questions!
+Feel free to open an issue or reach out to kcao1@swarthmore.edu or tonykcao@gmail.com for any questions!
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
