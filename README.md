@@ -114,6 +114,7 @@ NOTE:
     
 
 Thoughts: 
+    
     NOT APPLIED:
     0. MEMOIZE
     test challenges are simply 1 oscilator, this could be exploited
