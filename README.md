@@ -8,7 +8,7 @@ This implementation applies threading, AVX2 SIMD instructions, and bit masks to 
 For progress notes, please take a look at ChallengeNotes.adoc.
 Times provided there were tested on a Linux system with Intel Xeon E5-1650 (6 cores, 12 threads).
 
-Code rewritten from a coursework private repo to remove dependency of a visualization library. Program structure is retained from coursework implementation.
+Code rewritten from a coursework private repo to remove dependency of a visualization library. Program structure is retained from coursework implementation. Other intermediate versions available by request!
 
 ## Compilation & Usage
 
